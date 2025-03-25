@@ -640,9 +640,7 @@ Challenges, Solution
 
 .page-template-single-service section.single-service#challenges .single-challenge .description,
 .page-template-single-service section.single-service#solution .single-solution .header {
-	font-family: 'LitSans';
     font-size: 18px;
-    font-weight: 500;
 }
 
 .page-template-single-service section.single-service#solution .single-solution .header {
