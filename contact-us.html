@@ -221,7 +221,7 @@
                     <p><label>First Name<span class="lp-required" style="color: rgb(255, 0, 0);">*</span></label>
                     </p>
                     <div>
-                        <p><span class="wpcf7-form-control-wrap" data-name="vorname"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required lp-form-fieldInput" aria-required="true" aria-invalid="false" value="" type="text" name="vorname"></span>
+                        <p><span class="wpcf7-form-control-wrap" data-name="vorname"><input size="40" maxlength="400" required class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required lp-form-fieldInput" aria-required="true" aria-invalid="false" value="" type="text" name="vorname"></span>
                         </p>
                     </div>
                 </div>
@@ -229,7 +229,7 @@
                     <p><label>Last Name<span class="lp-required" style="color: rgb(255, 0, 0);">*</span></label>
                     </p>
                     <div>
-                        <p><span class="wpcf7-form-control-wrap" data-name="nachname"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required lp-form-fieldInput" aria-required="true" aria-invalid="false" value="" type="text" name="nachname"></span>
+                        <p><span class="wpcf7-form-control-wrap" data-name="nachname"><input size="40" maxlength="400" required class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required lp-form-fieldInput" aria-required="true" aria-invalid="false" value="" type="text" name="nachname"></span>
                         </p>
                     </div>
                 </div>
@@ -239,7 +239,7 @@
                     <p><label>Business email<span class="lp-required" style="color: rgb(255, 0, 0);">*</span></label>
                     </p>
                     <div>
-                        <p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" value="" type="email" name="email"></span>
+                        <p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="400" required class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" value="" type="email" name="email"></span>
                         </p>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                     <p><label>Phone number<span class="lp-required" style="color: rgb(255, 0, 0);">*</span></label>
                     </p>
                     <div>
-                        <p><span class="wpcf7-form-control-wrap" data-name="tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" value="" type="tel" name="tel"></span>
+                        <p><span class="wpcf7-form-control-wrap" data-name="tel"><input size="40" required maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" value="" type="tel" name="tel"></span>
                         </p>
                     </div>
                 </div>
@@ -259,7 +259,7 @@
                     <p><label>Message<span class="lp-required" style="color: rgb(255, 0, 0);">*</span></label>
                     </p>
                     <div>
-                        <p><span class="wpcf7-form-control-wrap" data-name="message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="message"></textarea></span>
+                        <p><span class="wpcf7-form-control-wrap" data-name="message"><textarea cols="40" required rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="message"></textarea></span>
                         </p>
                     </div>
                 </div>
@@ -354,6 +354,7 @@
 
             // Validate required fields
             let isValid = true;
+            console.log(form.querySelectorAll('[required]'))
             form.querySelectorAll('[required]').forEach(field => {
                 if (!field.value.trim()) {
                 isValid = false;
@@ -381,6 +382,7 @@
             .then(response => {
                 if (response.ok) {
                 successMessage.style.display = 'block';
+
                 form.reset();
                 window.scrollTo({
                     top: 0,
