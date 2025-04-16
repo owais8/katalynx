@@ -281,7 +281,7 @@
             </div>
             <div class="form-container recaptcha">
                 <div class="columnContainer">
-                    <div class="g-recaptcha" data-sitekey="6LdTMBsrAAAAALx-8isC99HmHIf__HrBCM507LKv"></div>
+                    <div class="g-recaptcha" data-sitekey="6LeVMhsrAAAAAPVO3vVvez7MYPTY1sxIPSP97deh"></div>
                 </div>
             </div>
             <div class="form-container submit-container">
@@ -360,22 +360,33 @@
             const submitButton = form.querySelector('input[type="submit"]');
             const successMessage = form.querySelector('.form-submission-success');
             const errorOutput = form.querySelector('.wpcf7-response-output');
+            const recaptchaResponse = form.querySelector('[name="g-recaptcha-response"]').value;
 
             // Clear previous messages
             successMessage.style.display = 'none';
             errorOutput.textContent = '';
             errorOutput.style.display = 'none';
 
-            // Validate required fields
+            // Validate required fields including reCAPTCHA
             let isValid = true;
-            console.log(form.querySelectorAll('[required]'))
-            form.querySelectorAll('[required]').forEach(field => {
-                if (!field.value.trim()) {
+            
+            // Check reCAPTCHA
+            if (!recaptchaResponse) {
                 isValid = false;
-                field.classList.add('wpcf7-not-valid');
-                errorOutput.textContent = 'Please fill out all required fields.';
+                errorOutput.textContent = 'Please complete the reCAPTCHA.';
                 errorOutput.style.color = 'red';
                 errorOutput.style.display = 'block';
+            }
+
+            form.querySelectorAll('[required]').forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('wpcf7-not-valid');
+                    if (!errorOutput.textContent) {
+                        errorOutput.textContent = 'Please fill out all required fields.';
+                        errorOutput.style.color = 'red';
+                        errorOutput.style.display = 'block';
+                    }
                 }
             });
 
