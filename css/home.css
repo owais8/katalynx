@@ -508,7 +508,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 .home section#strategic-imperatives .steps {
 	counter-reset: steps 0;
 	/*margin-top: -16px;*/
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 }
 
 .home section#strategic-imperatives .steps a:not(.sub-page) {
@@ -759,7 +759,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 .home section#about a.link {
 	display: flex;
     align-items: center;
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 	font-size: 0.9em;
 	/*margin: 0 25px;*/
 	margin-right: 32px;

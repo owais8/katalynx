@@ -6,7 +6,7 @@
 	flex-shrink: 0;
     align-items: center;
 	width: fit-content;
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 	font-size: 1em;
 	margin: 0;
 	position: relative;
@@ -241,7 +241,7 @@ section#spotlights a.read-more {
 }
 
 #spotlights-slider .slide .title {
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 	transform: translateX(30px);
 	position: absolute;
 	left: 90px;

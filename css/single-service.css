@@ -209,7 +209,7 @@ body.overflow.page-template-single-service #service-navigation {
 }
 
 .page-template-single-service #service-navigation ul li.title {
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 	border-right: 1px solid #D9D9D9;
 	padding-right: 1.2vw;
 	margin-left: 0;
@@ -1053,7 +1053,7 @@ Info-Block
 }
 
 .page-template-single-service .info-block .details > .single-details .header {
-	font-family: 'MontBold'
+	font-family: 'Poppins'
 }
 
 @media all and (max-width: 840px) {
@@ -1254,7 +1254,7 @@ Team Members
 }
 
 .page-template-single-service section.single-service#contact .contact-person a.booking {
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 	font-size: 15px;
 	line-height: 22px;
 	background: #1C2157;
@@ -1450,7 +1450,7 @@ contact form
 }
 
 .page-template-single-service .wpcf7 form .form-container.datenschutz a {
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 }
 
 .page-template-single-service .wpcf7 form .form-container label {
@@ -1481,7 +1481,7 @@ contact form
 	height: 46px;
 	font-size: 15px;
 	line-height: 22px;
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 }
 
 @media all and (max-width:600px) {

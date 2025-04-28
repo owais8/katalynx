@@ -243,7 +243,7 @@ iframe {
 }
 
 strong, b {
-  	font-family: 'MontBold';
+  	font-family: 'Poppins';
 	font-weight: normal;
 }
 
@@ -766,7 +766,7 @@ a.weiterlesen:hover::before {
 .page-id-91362 .wpcf7 form .form-container.datenschutz a, 
 .page-id-92688 .wpcf7 form .form-container.datenschutz a,
 .page-id-92202 .wpcf7 form .form-container.datenschutz a {
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 }
 
 .page-id-91362 .wpcf7 form .form-container label, 
@@ -809,7 +809,7 @@ a.weiterlesen:hover::before {
 	height: 46px;
 	font-size: 15px;
 	line-height: 22px;
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 }
 
 .page-id-91904 .wpcf7 form input[type="submit"],
@@ -820,7 +820,7 @@ a.weiterlesen:hover::before {
 	height: 46px;
 	font-size: 15px;
 	line-height: 22px;
-	font-family: 'MontBold';
+	font-family: 'Poppins';
 }
 
 @media all and (max-width:600px) {
