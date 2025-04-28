@@ -282,7 +282,7 @@ header nav .main_nav ul > li.active:first-child > ul {
 
 header nav .main_nav ul > li > ul > li {
 	/* flex-basis: 100%;*/
-	font-family: 'MontRegular';
+	font-family: 'Poppins';
 	padding-bottom: 2vh;
 }
 
@@ -407,7 +407,7 @@ header nav .sec_nav ul {
   	padding-right: 0;
   	padding-bottom: 0;
 	margin: 0;
-	font-family: 'MontRegular';
+	font-family: 'Poppins';
 	text-align: right;
 }
 
@@ -458,7 +458,7 @@ header nav .sec_nav ul li.contact a:hover {
 header nav .sec_nav .nav-contact {
 	color: #1c2157;
 	text-align: right;
-	font-family: 'MontRegular';
+	font-family: 'Poppins';
 	margin-bottom: 0;
 	margin-top: 20px;
 }
@@ -830,7 +830,7 @@ header.open .burger div:nth-of-type(3) {
 		margin-top: 5vh;
 		margin-bottom: 35px;
 		
-		font-family: 'MontRegular';
+		font-family: 'Poppins';
 		font-size: 1em;
     	line-height: 1.2em;
 		

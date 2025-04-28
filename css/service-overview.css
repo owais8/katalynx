@@ -58,7 +58,7 @@
 
 .page-template-service-overview section.single-service#challenges .single-challenge .description {
 	flex-grow: 1;
-    font-family: 'MontRegular', Arial, Helvetica, sans-serif!important;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif!important;
     font-weight: 600!important;
     font-size: 15px!important;
     line-height: 26px!important;
@@ -181,7 +181,7 @@
 .page-template-service-overview .testimonials .column .evaluation::before, 
 .page-template-service-overview .testimonials .column .evaluation::after {
 	content: '"';
-	font-family: 'MontRegular', Arial, Helvetica, sans-serif;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .page-template-service-overview .testimonials .column .name {

@@ -341,10 +341,11 @@
 .page-template-about .bottom-bar {
 	background: #C6D8F1;
 	text-align: center;
-	font-family: 'LitSans';
+	font-family: 'Poppins';
 	font-size: 26px;
 	padding-top: 60px;
 	padding-bottom: 55px; /* a padding 5px */
+	font-weight: 600;
 }
 
 .page-template-about .bottom-bar a {

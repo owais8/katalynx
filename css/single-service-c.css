@@ -7,7 +7,7 @@
 
 .page-template-single-service-c section.single-service#solution .single-solution .header {
 	margin-bottom: 0;
-	font-family: MontRegular;
+	font-family: Poppins;
 	font-size: 15px;
 }
 .page-template-single-service-c section.single-service#solution .single-solution {
@@ -308,7 +308,7 @@
 .page-template-single-service-c .testimonials .column .evaluation::before, 
 .page-template-single-service-c .testimonials .column .evaluation::after {
 	content: '"';
-	font-family: 'MontRegular', Arial, Helvetica, sans-serif;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .page-template-single-service-c .testimonials .column .name {
