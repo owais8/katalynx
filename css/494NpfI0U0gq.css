@@ -800,6 +800,10 @@ a.weiterlesen:hover::before {
 	height: 160px;
 	resize: none!important;
 }
+input,
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
 
 .page-id-91362 .wpcf7 form input[type="submit"], 
 .page-id-92688 .wpcf7 form input[type="submit"], 
